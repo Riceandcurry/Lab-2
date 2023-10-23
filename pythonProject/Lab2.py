@@ -2,7 +2,7 @@ def main():
     print("ET0735 (DevOps for AIoT) - Lab 2 - Introduction to Python")
     display_main_menu()
     num_list = get_user_input()
-    average_of_list = calc_average(num_list)
+    calc_average(num_list)
     find_min_max(num_list)
 
 
