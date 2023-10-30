@@ -1,11 +1,8 @@
 def main():
     print("ET0735 (DevOps for AIoT) - Lab 2 - Introduction to Python")
-    display_main_menu()
-    num_list = get_user_input()
+    value = calculate_bmi(weight=2, height=1.68)
+    print(value)
 
-
-if __name__ == "__main__":
-    main()
 
 
 def calculate_bmi(height, weight):
@@ -13,12 +10,16 @@ def calculate_bmi(height, weight):
     print("Weight = " + str(weight))
 
     bmi = weight/(height*height)
-    print(bmi)
     if bmi < 18.5:
         print("Under Weight")
+        return (-1)
     elif (bmi > 25):
         print("Over weight")
+        return(0)
     else:
         print("Normal weight")
-calculate_bmi(weight=2, height=1.68)
+        return(1)
 
+
+if __name__ == "__main__":
+    main()
