@@ -38,14 +38,13 @@ def find_min_max(num_list):
     max_temp = 0.0
     min_temp = 10000000.0
     for i in num_list:
-        print(i)
         if i > max_temp:
             max_temp = i
         if i < min_temp:
             min_temp = i
 
     minmax_list = [min_temp, max_temp]
-    print(minmax_list)
+    return minmax_list
 
 def sort_temperature(num_list):
     num_list.sort()
@@ -53,8 +52,10 @@ def sort_temperature(num_list):
 
 def calc_median_temperature(num_list):
     median = statistics.median(num_list)
-    print(median)
+    return median
 
 
 if __name__ == "__main__":
     main()
+
+
